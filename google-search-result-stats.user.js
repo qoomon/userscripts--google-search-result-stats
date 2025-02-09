@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Show Google search result stats
 // @namespace    https://qoomon.github.io
-// @version      1.0.0
+// @version      1.0.1
 // @updateURL    https://github.com/qoomon/userscript-google-search-result-stats/raw/main/google-search-result-stats.user.js
 // @downloadURL  https://github.com/qoomon/userscript-google-search-result-stats/raw/main/google-search-result-stats.user.js
 // @description  try to take over the world!
@@ -18,7 +18,8 @@ const resultStatsElement = document.body.querySelector('#result-stats');
 resultElement.parentElement.insertBefore(resultStatsElement, resultElement);
 // adjust style
 Object.assign(resultStatsElement.style, {
-  marginBottom: '24px',
+  color: '#9aa0a6',
   fontSize: '12px',
-  fontWeight: 'bold',
+  lineHeight: '18px',
+  marginBottom: '24px',
 });
